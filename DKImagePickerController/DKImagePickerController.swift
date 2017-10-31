@@ -118,6 +118,10 @@ open class DKImagePickerController : UINavigationController {
         return DKImagePickerControllerDefaultUIDelegate()
     }()
     
+    
+    /// text attributes to theme the titleButton.
+    static public var titleTextAttributes: [String : Any]?
+    
     /// Forces deselect of previous selected image
     public var singleSelect = false
     
