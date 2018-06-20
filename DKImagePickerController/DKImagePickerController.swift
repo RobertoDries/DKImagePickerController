@@ -10,6 +10,19 @@ import UIKit
 import Photos
 import AssetsLibrary
 
+class DKColorPalette {
+    
+    static let shared = DKColorPalette()
+    
+    var lightBackgroundColor: UIColor = UIColor.white
+    
+    var backgroundColor: UIColor = UIColor.black
+    
+    var textColor: UIColor = UIColor.white
+    
+    var detailTextColor: UIColor = UIColor.gray
+}
+
 @objc
 public protocol DKImagePickerControllerCameraProtocol {
     
