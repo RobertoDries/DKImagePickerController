@@ -19,18 +19,17 @@ open class DKPermissionView: UIView {
 		let permissionView = DKPermissionView()
 		permissionView.addSubview(permissionView.titleLabel)
 		permissionView.addSubview(permissionView.permitButton)
-		
+        permissionView.titleLabel.textColor = DKColorPalette.shared.textColor
+        
 		if style == .photo {
 			permissionView.titleLabel.text = DKImageLocalizedStringWithKey("permissionPhoto")
-			permissionView.titleLabel.textColor = DKColorPalette.shared.detailTextColor
 		} else {
-			permissionView.titleLabel.textColor = DKColorPalette.shared.textColor
 			permissionView.titleLabel.text = DKImageLocalizedStringWithKey("permissionCamera")
 		}
 		permissionView.titleLabel.sizeToFit()
 		
 		permissionView.permitButton.setTitle(DKImageLocalizedStringWithKey("permit"), for: .normal)
-		permissionView.permitButton.setTitleColor(UIColor(red: 0, green: 122.0 / 255, blue: 1, alpha: 1), for: .normal)
+		permissionView.permitButton.setTitleColor(DKColorPalette.shared.textColor, for: .normal)
 		permissionView.permitButton.addTarget(permissionView, action: #selector(DKPermissionView.gotoSettings), for: .touchUpInside)
 		permissionView.permitButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
 		permissionView.permitButton.sizeToFit()

@@ -10,17 +10,17 @@ import UIKit
 import Photos
 import AssetsLibrary
 
-class DKColorPalette {
+public class DKColorPalette {
     
-    static let shared = DKColorPalette()
+    public static let shared = DKColorPalette()
     
-    var lightBackgroundColor: UIColor = UIColor.white
+    public var lightBackgroundColor: UIColor = UIColor.white
     
-    var backgroundColor: UIColor = UIColor.black
+    public var backgroundColor: UIColor = UIColor.black
     
-    var textColor: UIColor = UIColor.white
+    public var textColor: UIColor = UIColor.white
     
-    var detailTextColor: UIColor = UIColor.gray
+    public var detailTextColor: UIColor = UIColor.gray
 }
 
 @objc
