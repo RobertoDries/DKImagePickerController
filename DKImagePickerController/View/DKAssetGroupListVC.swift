@@ -43,7 +43,7 @@ class DKAssetGroupCell: UITableViewCell {
     var totalCountLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 10)
-        label.textColor = UIColor.gray
+        label.textColor = DKColorPalette.shared.detailTextColor
         return label
     }()
 

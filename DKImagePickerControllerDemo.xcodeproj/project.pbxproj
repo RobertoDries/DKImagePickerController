@@ -58,6 +58,8 @@
 		9CE807CC1DA9E300009CBDA5 /* DKAssetGroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B3E011C219724009684FE /* DKAssetGroupDetailVC.swift */; };
 		9CE807CD1DA9E300009CBDA5 /* DKAssetGroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B3E011C219724009684FE /* DKAssetGroupDetailVC.swift */; };
 		9CF72B161B8F073400238B9A /* DKImagePickerControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF72B151B8F073400238B9A /* DKImagePickerControllerDemoTests.swift */; };
+		B844413020DA92CB004AD693 /* DKColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844412F20DA92CB004AD693 /* DKColorPalette.swift */; };
+		B844413120DA9640004AD693 /* DKColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B844412F20DA92CB004AD693 /* DKColorPalette.swift */; };
 		B9EFB9661D20FB7D006CDCAA /* DKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EFB9651D20FB7D006CDCAA /* DKImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9EFB96D1D20FB7D006CDCAA /* DKImagePickerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EFB9631D20FB7D006CDCAA /* DKImagePickerController.framework */; };
 		B9EFB9741D20FB7D006CDCAA /* DKImagePickerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EFB9731D20FB7D006CDCAA /* DKImagePickerControllerTests.swift */; };
@@ -168,6 +170,7 @@
 		9CF72B111B8F073400238B9A /* DKImagePickerControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKImagePickerControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF72B141B8F073400238B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF72B151B8F073400238B9A /* DKImagePickerControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKImagePickerControllerDemoTests.swift; sourceTree = "<group>"; };
+		B844412F20DA92CB004AD693 /* DKColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKColorPalette.swift; sourceTree = "<group>"; };
 		B9EFB9631D20FB7D006CDCAA /* DKImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DKImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EFB9651D20FB7D006CDCAA /* DKImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKImagePickerController.h; sourceTree = "<group>"; };
 		B9EFB9671D20FB7D006CDCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -293,6 +296,7 @@
 				9C6E4ADE1F4DB2A0008F1CD2 /* DKCamera.swift */,
 				9C6E4AE01F4DB2A0008F1CD2 /* DKCameraResource.swift */,
 				9C6E4ADF1F4DB2A0008F1CD2 /* DKCameraResource.bundle */,
+				B844412F20DA92CB004AD693 /* DKColorPalette.swift */,
 			);
 			path = DKCamera;
 			sourceTree = SOURCE_ROOT;
@@ -622,6 +626,7 @@
 				9CD9F1891B720CC20084B9DD /* DKPopoverViewController.swift in Sources */,
 				9C1B8EE11E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */,
 				9C6E4AEA1F4EC738008F1CD2 /* CustomInlineFlowLayout.swift in Sources */,
+				B844413020DA92CB004AD693 /* DKColorPalette.swift in Sources */,
 				9CBD589E1E1B597400F41A88 /* CustomCameraUIDelegate.swift in Sources */,
 				9CBAA4A91C4B893A0097AFAB /* DKAssetGroupGridLayout.swift in Sources */,
 				9CBF3F811AB15D210000F1D1 /* ViewController.swift in Sources */,
@@ -676,6 +681,7 @@
 				B9EFB98E1D20FBAA006CDCAA /* DKImageResource.swift in Sources */,
 				9CE807CD1DA9E300009CBDA5 /* DKAssetGroupDetailVC.swift in Sources */,
 				9C1B8EE21E1B411A00282232 /* DKAssetGroupCellItemProtocol.swift in Sources */,
+				B844413120DA9640004AD693 /* DKColorPalette.swift in Sources */,
 				9C6E4AED1F4EC738008F1CD2 /* CustomInlineLayoutUIDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,7 +866,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -882,7 +888,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 85M74MVK78;
 				INFOPLIST_FILE = DKImagePickerControllerDemo/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaozi.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";

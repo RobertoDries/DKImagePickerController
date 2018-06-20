@@ -109,7 +109,7 @@ open class DKAssetGroupDetailVC: UIViewController, UICollectionViewDelegate, UIC
 	internal func checkPhotoPermission() {
 		func photoDenied() {
 			self.view.addSubview(DKPermissionView.permissionView(.photo))
-			self.view.backgroundColor = UIColor.black
+			self.view.backgroundColor = DKColorPalette.shared.backgroundColor
 			self.collectionView?.isHidden = true
 		}
 		

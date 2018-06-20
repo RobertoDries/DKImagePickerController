@@ -22,9 +22,9 @@ open class DKPermissionView: UIView {
 		
 		if style == .photo {
 			permissionView.titleLabel.text = DKImageLocalizedStringWithKey("permissionPhoto")
-			permissionView.titleLabel.textColor = UIColor.gray
+			permissionView.titleLabel.textColor = DKColorPalette.shared.detailTextColor
 		} else {
-			permissionView.titleLabel.textColor = UIColor.white
+			permissionView.titleLabel.textColor = DKColorPalette.shared.textColor
 			permissionView.titleLabel.text = DKImageLocalizedStringWithKey("permissionCamera")
 		}
 		permissionView.titleLabel.sizeToFit()

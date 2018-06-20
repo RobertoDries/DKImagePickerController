@@ -25,7 +25,7 @@ class DKAssetGroupDetailImageCell: DKAssetGroupDetailBaseCell {
         self.checkView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.checkView.checkImageView.tintColor = nil
         self.checkView.checkLabel.font = UIFont.boldSystemFont(ofSize: 14)
-        self.checkView.checkLabel.textColor = UIColor.white
+        self.checkView.checkLabel.textColor = DKColorPalette.shared.textColor
         self.contentView.addSubview(self.checkView)
     }
     

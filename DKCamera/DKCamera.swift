@@ -253,7 +253,7 @@ open class DKCamera: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     let bottomView = UIView()
     open func setupUI() {
-        self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = DKColorPalette.shared.backgroundColor
         self.view.addSubview(self.contentView)
         self.contentView.backgroundColor = UIColor.clear
         self.contentView.frame = self.view.bounds
@@ -286,12 +286,12 @@ open class DKCamera: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             
             class DKCaptureButton: UIButton {
                 fileprivate override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-                    self.backgroundColor = UIColor.white
+                    self.backgroundColor = DKColorPalette.shared.lightBackgroundColor
                     return true
                 }
                 
                 fileprivate override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
-                    self.backgroundColor = UIColor.white
+                    self.backgroundColor = DKColorPalette.shared.lightBackgroundColor
                     return true
                 }
                 
