@@ -50,6 +50,7 @@ open class DKAssetGroupDetailVC: UIViewController, UICollectionViewDelegate, UIC
     private var registeredCellIdentifiers = Set<String>()
     private var thumbnailSize = CGSize.zero
     private var curSwipingPath:IndexPath? = nil
+    private var permissionView: UIView?
 	
 	override open func viewWillLayoutSubviews() {
 		super.viewWillLayoutSubviews()
@@ -104,13 +105,20 @@ open class DKAssetGroupDetailVC: UIViewController, UICollectionViewDelegate, UIC
 		} else {
 			self.collectionView.frame = self.view.bounds
 		}
+        
+        if let view = permissionView {
+            view.center = self.view.center
+        }
 	}
 	
 	internal func checkPhotoPermission() {
 		func photoDenied() {
-			self.view.addSubview(DKPermissionView.permissionView(.photo))
-			self.view.backgroundColor = DKColorPalette.shared.backgroundColor
-			self.collectionView?.isHidden = true
+            permissionView = DKPermissionView.permissionView(.photo)
+            if let permissionView = permissionView {
+                self.view.addSubview(permissionView)
+            }
+            self.view.backgroundColor = DKColorPalette.shared.backgroundColor
+            self.collectionView?.isHidden = true
 		}
 		
 		func setup() {
